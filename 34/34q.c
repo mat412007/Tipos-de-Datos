@@ -3,6 +3,10 @@
 
 int main(int argc, char *argv[]){
     int dinero = atoi(argv[1]);
+    if(dinero < 0){
+        printf("Error\n");
+        return 1;
+    }
     int b1000 = dinero / 1000;
     int b500 = (dinero % 1000) / 500;
     int b200 = ((dinero % 1000) % 500) / 200;
