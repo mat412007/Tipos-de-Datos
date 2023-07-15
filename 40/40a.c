@@ -5,8 +5,7 @@ int main(int argc, char *argv[]){
     int numero = atoi(argv[1]);
 
     if(numero < 0){
-        numero = -numero;
-        printf("%d\n", numero);
+        printf("%d\n", -numero);
     }
     else{
         printf("%d\n", numero);
